@@ -1,8 +1,8 @@
-Pretty tuple
-============
+Prettytuple
+===========
 
-Standard [named tuple][namedtuple_docs] is a popular and handful tool in many cases, which suffers
-from its own clunky and messy syntax. Consider an example:
+The standard [named tuple][namedtuple_docs] is a popular and handful tool in many cases, which
+suffers from its own clunky and messy syntax. Consider an example:
 
 ```python
 Location = namedtuple('Location', 'lat long')
@@ -41,10 +41,10 @@ Usage
 After importing, you can use `prettytuple` decorator to convert any function to a named tuple
 declaration. The converion rules are following:
 
-  * function name becomes the record type name;
-  * function arguments become fields of the record (names and order are preserved);
-  * function docstring become docstring of the new type;
-  * function body is discarded. 
+  * Function name becomes the record type name;
+  * Function arguments become fields of the record (names and order are preserved);
+  * Function docstring become docstring of the new type;
+  * Function body is discarded. 
 
 Let's come back to our example:
 
@@ -62,7 +62,7 @@ And the most remarkable thing is that this new `Location` is 100% compatible wit
 and patterns, because it *is* a good old named tuple under the hood!
 
 
-Licence
+License
 -------
 
 This software is distributed under [MIT Licence](./LICENSE). You are free to use this software for
